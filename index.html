@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="Css/main.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Clothing Gallery</h1>
+        <div class="filters">
+            <button onclick="filterImages('all')">All</button>
+            <button onclick="filterImages('tshirt')">T-Shirts</button>
+            <button onclick="filterImages('pants')">Pants</button>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <!-- T-Shirts -->
+        <div class="image-box tshirt">
+            <img src="image/download (1).jpeg" alt="T-Shirt 1" onclick="openLightbox(this)">
+        </div>
+        <div class="image-box tshirt">
+            <img src="image/download (2).jpeg" alt="T-Shirt 1" onclick="openLightbox(this)">
+        </div>
+
+        <div class="image-box tshirt">
+            <img src="image/00.jpeg" alt="T-Shirt 1" onclick="openLightbox(this)">
+        </div>
+
+        <div class="image-box tshirt">
+            <img src="image/download (4).jpeg" alt="T-Shirt 1" onclick="openLightbox(this)">
+        </div>
+        <div class="image-box tshirt">
+            <img src="image/download (5).jpeg" alt="T-Shirt 1" onclick="openLightbox(this)">
+        </div>
+        <div class="image-box tshirt">
+            <img src="image/download (6).jpeg" alt="T-Shirt 1" onclick="openLightbox(this)">
+        </div>
+        <div class="image-box tshirt">
+            <img src="image/download (7).jpeg" alt="T-Shirt 1" onclick="openLightbox(this)">
+        </div>
+
+
+        <!-- Pants -->
+        <div class="image-box pants">
+            <img src="image/1-161_uxcb5e6nzdyuhhix_1.webp" alt="Pants 1" onclick="openLightbox(this)">
+        </div>
+        <div class="image-box pants">
+            <img src="image/149_qsln1siptv0oxfxz_1.webp" alt="Pants 1" onclick="openLightbox(this)">
+        </div>
+        <div class="image-box pants">
+            <img src="image/10.webp" alt="Pants 1" onclick="openLightbox(this)">
+        </div>
+        <div class="image-box pants">
+            <img src="image/images.jpeg" alt="Pants 1" onclick="openLightbox(this)">
+        </div>
+        <div class="image-box pants">
+            <img src="image/21CtuiM+uqL._SY1000_.jpg" alt="Pants 1" onclick="openLightbox(this)">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <span id="prev" onclick="prevImage(event)">&#10094;</span>
+        <img id="lightbox-img" />
+        <span id="next" onclick="nextImage(event)">&#10095;</span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
